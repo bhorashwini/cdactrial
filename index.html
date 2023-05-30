@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(()=>{
+                $("button").hide()
+                $("p").click(()=>{
+                    $("p").hide();
+                    $("button").show()
+                });
+                $(button).click(()=>{
+                
+               
+                    $("p").show();
+                    $("button").hide()
+                });
+                $("button").mouseenter(()=>{
+                    $("#myMsg").text("hi")
+                })
+                $("button").mouseleave(()=>{
+                    $("#myMsg").text("")
+                })
+            })
+            
+        </script>
+    </head>
+    <body>
+        <p>Dont click me,else i will disappear</p>
+        <button>show</button>
+        <div id="myMsg"></div>
+    </body>
+</html>

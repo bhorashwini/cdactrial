@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .ancestors * {
+            display: block;
+            border: 1px dashed skyblue;
+            color: lightgreen;
+            padding: 5px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("span").siblings().css({ "color": "brown", "border": "2px solid red" });
+           // $("span").parentsUntil('div').css({ "color": "brown", "border": "2px solid red" });
+          // $("span").parents().css({ "color": "brown", "border": "2px solid red" });
+           $("span").parentsUntil().css({ "color": "brown", "border": "2px solid red" });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="......" style="width:500px;">div (current element) 
+        <p>p (child)
+          <span>span (grandchild)</span>   
+        </p>
+        <p>p (child)
+          <span>span (grandchild)</span>
+        </p> 
+      </div>
+      <div class="......" style="width:300px;">div (current element) 
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+      </body>
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
